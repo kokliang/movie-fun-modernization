@@ -17,3 +17,5 @@ albums:
 movies:
   url: http://localhost:8082/movies
 
+
+security.oauth2.client.grant-type: client_credentials

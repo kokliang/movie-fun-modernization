@@ -10,7 +10,7 @@ description = "OpenEJB :: Web Examples :: Moviefun"
 
 dependencyManagement {
     imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion"
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:Finchley.SR2"
     }
 }
 
@@ -27,8 +27,8 @@ dependencies {
 
     compile "org.apache.tomcat.embed:tomcat-embed-jasper:8.5.6"
 
-    compile "org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:$springSecurityOAuthAutoconfigVersion"
-    compile "io.pivotal.spring.cloud:spring-cloud-sso-connector:$springCloudSsoVersion"
+    compile "org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.4.RELEASE"
+    compile "io.pivotal.spring.cloud:spring-cloud-sso-connector:2.1.3.RELEASE"
     compile "org.springframework.security:spring-security-taglibs"
 
     testCompile "junit:junit:$junitVersion"
