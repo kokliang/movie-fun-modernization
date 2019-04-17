@@ -1,0 +1,10 @@
+---
+applications:
+  - name: movie-service
+    path: applications/movie-service/build/libs/movie-service-1.1.0-SNAPSHOT.jar
+    routes:
+      - route: movie-service-psa.apps.evans.pal.pivotal.io
+    env:
+      GRANT_TYPE: client_credentials
+    services:
+      - movie-database
